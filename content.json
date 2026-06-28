@@ -1,0 +1,55 @@
+{
+  "title": "For You ❤️",
+
+  "name": "Nama Dia",
+
+  "music": "assets/music/song.mp3",
+
+  "letter": [
+    "Hai...",
+    "Terima kasih sudah hadir di hidupku.",
+    "Mungkin aku bukan orang yang paling sempurna.",
+    "Tapi setiap kali sama kamu, semuanya terasa lebih indah.",
+    "Aku cuma ingin kamu tahu satu hal...",
+    "Aku sayang sama kamu. ❤️"
+  ],
+
+  "photos": [
+    {
+      "image": "assets/photos/photo1.jpg",
+      "caption": "Foto favoritku 🤍"
+    },
+    {
+      "image": "assets/photos/photo2.jpg",
+      "caption": "Momen yang gak bakal aku lupain."
+    },
+    {
+      "image": "assets/photos/photo3.jpg",
+      "caption": "Senyummu selalu bikin hariku lebih baik."
+    },
+    {
+      "image": "assets/photos/photo4.jpg",
+      "caption": "Semoga suatu hari nanti kita punya lebih banyak foto bersama."
+    }
+  ],
+
+  "reasons": [
+    "Aku suka cara kamu senyum.",
+    "Aku suka cara kamu ngobrol.",
+    "Aku suka perhatian kecil yang kamu kasih.",
+    "Aku nyaman kalau lagi sama kamu.",
+    "Kamu selalu bikin aku semangat.",
+    "Kamu itu spesial."
+  ],
+
+  "quotes": [
+    "Kalau rumah punya alamat, mungkin hatiku alamatnya kamu.",
+    "Semoga semesta baik sama kita.",
+    "Semua cerita indah selalu dimulai dari pertemuan sederhana."
+  ],
+
+  "ending": {
+    "title": "Terima Kasih ❤️",
+    "text": "Apa pun jawabanmu nanti, aku tetap bersyukur pernah mengenalmu."
+  }
+}
