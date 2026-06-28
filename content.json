@@ -1,35 +1,36 @@
 {
-  "title": "For You ❤️",
+  "website": {
+    "title": "Entertainment For You ❤️",
+    "heroTitle": "Hai, Untuk Kamu ❤️",
+    "heroSubtitle": "Aku punya sesuatu yang ingin aku sampaikan..."
+  },
 
-  "name": "Nama Dia",
-
-  "music": "assets/music/song.mp3",
+  "music": {
+    "src": "assets/music/song.mp3",
+    "autoplay": false
+  },
 
   "letter": [
     "Hai...",
-    "Terima kasih sudah hadir di hidupku.",
-    "Mungkin aku bukan orang yang paling sempurna.",
-    "Tapi setiap kali sama kamu, semuanya terasa lebih indah.",
-    "Aku cuma ingin kamu tahu satu hal...",
-    "Aku sayang sama kamu. ❤️"
+    "Makasih ya udah mau buka halaman ini.",
+    "Mungkin ini bukan cara paling sempurna buat nyampein perasaanku.",
+    "Tapi aku pengen kamu tau kalau kehadiranmu berarti buat aku.",
+    "Kamu berhasil bikin hari-hariku lebih berwarna.",
+    "Semoga setelah baca semuanya, kamu ngerti apa yang selama ini aku rasain. ❤️"
   ],
 
-  "photos": [
+  "gallery": [
     {
       "image": "assets/photos/photo1.jpg",
       "caption": "Foto favoritku 🤍"
     },
     {
       "image": "assets/photos/photo2.jpg",
-      "caption": "Momen yang gak bakal aku lupain."
+      "caption": "Momen yang gak akan aku lupain."
     },
     {
       "image": "assets/photos/photo3.jpg",
       "caption": "Senyummu selalu bikin hariku lebih baik."
-    },
-    {
-      "image": "assets/photos/photo4.jpg",
-      "caption": "Semoga suatu hari nanti kita punya lebih banyak foto bersama."
     }
   ],
 
@@ -37,19 +38,18 @@
     "Aku suka cara kamu senyum.",
     "Aku suka cara kamu ngobrol.",
     "Aku suka perhatian kecil yang kamu kasih.",
-    "Aku nyaman kalau lagi sama kamu.",
-    "Kamu selalu bikin aku semangat.",
-    "Kamu itu spesial."
+    "Aku nyaman setiap ada kamu.",
+    "Kamu selalu bikin aku semangat."
   ],
 
   "quotes": [
+    "Semua cerita indah dimulai dari pertemuan sederhana.",
     "Kalau rumah punya alamat, mungkin hatiku alamatnya kamu.",
-    "Semoga semesta baik sama kita.",
-    "Semua cerita indah selalu dimulai dari pertemuan sederhana."
+    "Terima kasih sudah menjadi bagian dari hariku."
   ],
 
   "ending": {
     "title": "Terima Kasih ❤️",
     "text": "Apa pun jawabanmu nanti, aku tetap bersyukur pernah mengenalmu."
   }
-}
+  }
