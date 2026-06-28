@@ -140,3 +140,137 @@ musicBtn.onclick=()=>{
     }
 
 };
+/* ==========================================
+   Floating Hearts
+========================================== */
+
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.innerHTML = "💖";
+
+    heart.style.position = "fixed";
+    heart.style.left = Math.random() * window.innerWidth + "px";
+    heart.style.bottom = "-30px";
+    heart.style.fontSize = (20 + Math.random() * 20) + "px";
+    heart.style.pointerEvents = "none";
+    heart.style.zIndex = "9999";
+    heart.style.transition = "all 6s linear";
+    heart.style.opacity = "1";
+
+    document.body.appendChild(heart);
+
+    requestAnimationFrame(() => {
+        heart.style.transform =
+            `translateY(-${window.innerHeight + 100}px)
+             translateX(${(Math.random()-0.5)*200}px)
+             rotate(${Math.random()*360}deg)`;
+
+        heart.style.opacity = "0";
+    });
+
+    setTimeout(() => {
+        heart.remove();
+    }, 6000);
+
+}
+
+setInterval(createHeart, 800);
+
+
+/* ==========================================
+   Scroll Animation
+========================================== */
+
+const observer = new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("fade");
+
+        }
+
+    });
+
+});
+
+document.querySelectorAll("section").forEach(section=>{
+
+    observer.observe(section);
+
+});
+
+
+/* ==========================================
+   Simpan Posisi Musik
+========================================== */
+
+music.addEventListener("timeupdate",()=>{
+
+    localStorage.setItem("music-time",music.currentTime);
+
+});
+
+window.addEventListener("load",()=>{
+
+    const t = localStorage.getItem("music-time");
+
+    if(t){
+
+        music.currentTime = Number(t);
+
+    }
+
+});
+
+
+/* ==========================================
+   Klik Dimana Saja = Confetti Kecil
+========================================== */
+
+document.addEventListener("click",()=>{
+
+    confetti({
+
+        particleCount:15,
+
+        spread:35,
+
+        origin:{
+            y:0.8
+        }
+
+    });
+
+});
+
+
+/* ==========================================
+   Ubah Judul Saat Tab Diganti
+========================================== */
+
+const originalTitle = document.title;
+
+document.addEventListener("visibilitychange",()=>{
+
+    if(document.hidden){
+
+        document.title = "Balik lagi ya ❤️";
+
+    }else{
+
+        document.title = originalTitle;
+
+    }
+
+});
+
+
+/* ==========================================
+   Smooth Fade Body
+========================================== */
+
+document.body.classList.add("fade");
